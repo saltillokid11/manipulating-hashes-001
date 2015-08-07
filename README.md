@@ -117,7 +117,7 @@ end
 This should return: 
 
 ```ruby
-Jon Snow      
+Jon Snow
 { :name=>"Jon", 
   :email=>"jon_snow@thewall.we", 
   :favorite_icecream_flavors=>["chocolate", "vanilla", "mint chip"],
@@ -169,7 +169,7 @@ contacts.each do |person, data|
   #to iterate over the "data" hash, we can use the following line: 
   
   data.each do |attribute, value|
-    #at this level, "attribute" describes the keys of :name, :email, :favorite_icecream_flavors, and :knows
+    #at this level, "attribute" is describes the key of :name, :email, :favorite_icecream_flavors, or :knows
     #we need to first check and see if the key is :favorite_icecream_flavors,
     #if it is, that means the VALUE is an array that we can iterate over to print out each element
     
@@ -199,7 +199,6 @@ Now it's your turn! You're going to iterate through the levels of this hash to o
 **Reminder:** *Iterating through nested hashes is hard, and (I'm pretty sure) you are not psychic. Meaning, you can't necessarily predict with perfect clarity what the key/value pair is at a certain level of the hash.* ***Use `binding.pry`*** *when you are iterating in upcoming labs to make sure you understand what the key/value pair is that you are iterating over.* 
 
 
-
 ### Code Along Challenge I: Manipulating Nested Hashes
 
 Fork and clone this lab. You'll be coding your solution to this first challenge in `lib/first_challenge.rb`. 
@@ -209,6 +208,7 @@ Your good buddy Freddy Mercury has recently developed a strawberry allergy! You 
 * Iterate over the `contacts` hash and when you reach the key of `:favorite_icecream_flavors`, remove `"strawberry"` from the array of Freddy's favorite ice cream flavors. There are at least two ways you can accomplish this:
   * You can iterate through the hash and, when you reach the appropriate level, check to see if the key `==` ("is equal to") `:favorite_icecream_flavors`. If it does, check to see if that array contains `"strawberry"`. If it does, then delete it from the array. 
   * OR you can directly iterate over the hash that is the value of the `"Freddy Mercury"` key by calling an enumerator method in `contacts["Freddy Mercury"]`.  
+
 **Hint:** *Use the* `.delete_if` *method to eliminate strawberry from the appropriate array.*  
 **Hint:** *Remember that the* `first_challenge` *method needs to return the newly altered* `contacts` *hash.* 
 
@@ -252,9 +252,10 @@ food_items.min
 #  => [:apples, 45] 
 ```
 
-These are only a few of the many helpful methods out there. Be sure to check out the [Ruby Docs on Hashes](http://ruby-doc.org/core-2.2.2/Hash.html) to learn more. 
+These are only a few of the many helpful methods out there. Be there to check out the [Ruby Docs on Hashes](http://ruby-doc.org/core-2.2.2/Hash.html) to learn more. 
 
-Let's practice before you move on to the next challenge: 
+Let's practice some more: 
+
 
 ### Code Along Challenge II: Manipulating Nested Hashes
 
@@ -263,6 +264,7 @@ You'll be coding your solution to this challenge in `lib/second_challenge.rb`. I
 * Use the `.values` method to collect all of the values of the grocery type keys (`:dairy`, `:vegetables`, `:meat`, `:grains`). The method should return a *one-dimensional* (or "flat") array that *only* includes only the values (groceries such as "milk" and "carrots") without their keys. 
 
 **Hint:** What happens when you call `.values` on a nested hash? What is the return value? How can you *flatten* an array of arrays? Make sure to use `binding.pry` to help you solve this one. 
+
 
 ## Resources: 
 
