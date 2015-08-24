@@ -58,7 +58,7 @@ puts contacts
 
 #### Example 2: 
 
-Now let's say that you want to add a whole new kay/value pair to your Jon Snow contact—his address. In a simpler hash with just one level of key value pairs, we've already learned how to add new key/value pairs. Here's a reminder: 
+Now let's say that you want to add a whole new key/value pair to your Jon Snow contact—his address. In a simpler hash with just one level of key value pairs, we've already learned how to add new key/value pairs. Here's a reminder: 
 
 ```ruby
 hash = {first: "first value!", second: "second value!"}
@@ -117,7 +117,7 @@ end
 This should return: 
 
 ```ruby
-Jon Snow
+Jon Snow:      
 { :name=>"Jon", 
   :email=>"jon_snow@thewall.we", 
   :favorite_icecream_flavors=>["chocolate", "vanilla", "mint chip"],
@@ -141,7 +141,7 @@ contacts.each do |person, data|
   #to iterate over the "data" hash, we can use the following line: 
   
   data.each do |attribute, value|
-    puts "#{attribute}: #{value}
+    puts "#{attribute}: #{value}"
   end
 end
 ```
