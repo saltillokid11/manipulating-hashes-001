@@ -8,6 +8,8 @@ def second_challenge
 
   #code your solution here!
   myval = groceries.values
-  
+  myval.each do |elem|
+    
+  end
 
 end
