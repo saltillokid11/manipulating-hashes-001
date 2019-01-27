@@ -12,5 +12,5 @@ def second_challenge
   myval.each do |elem|
     arr << elem
   end
-
+arr
 end
