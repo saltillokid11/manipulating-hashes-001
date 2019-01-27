@@ -7,7 +7,11 @@ def second_challenge
   }
 
   #code your solution here!
-return groceries.values
+  groceries.each do |thing, data|
+    data.each do |k,v|
+      v.values
+    end
+  end
 
 
 end
