@@ -12,6 +12,7 @@ def second_challenge
   p myval
   myval.each do |elem, v|
     puts elem
+    arr << elem
   end
   arr
 end
