@@ -8,7 +8,9 @@ def second_challenge
 
   #code your solution here!
   groceries.each do |thing, data|
-    data.each.values
+    data.each do |k,v|
+      
+    end
   end
 
 
