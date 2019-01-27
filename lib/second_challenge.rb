@@ -11,8 +11,7 @@ def second_challenge
   arr = [];
   p myval
   myval.each do |elem, v|
-    puts "ffffffffffff " + elem
-    puts "vvvvvv  " + v
+    puts elem
   end
   arr
 end
