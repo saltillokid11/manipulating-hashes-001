@@ -14,5 +14,5 @@ def second_challenge
     puts "ffffffffffff " + elem
     puts "vvvvvv  " + v
   end
-arr
+  arr
 end
