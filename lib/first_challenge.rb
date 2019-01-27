@@ -14,6 +14,11 @@ def first_challenge
   }
 
   #your code here
+  contacts.each do |person,data|
+    data.each do |k,v|
+      
+    end
+  end
   contacts["Freddy Mercury"][:favorite_icecream_flavors].delete("strawberry")
   puts contacts
 
