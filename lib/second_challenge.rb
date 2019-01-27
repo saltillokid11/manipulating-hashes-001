@@ -7,7 +7,7 @@ def second_challenge
   }
 
   #code your solution here!
-  myval = groceries.values(2);
+  myval = groceries.values;
   arr = [];
   # puts "vvvvvv  " + myval
   myval.each do |elem, v|
