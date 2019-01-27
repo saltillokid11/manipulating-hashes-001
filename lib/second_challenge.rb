@@ -7,12 +7,12 @@ def second_challenge
   }
 
   #code your solution here!
-  myval = groceries.values;
-  arr = [];
-  p myval
-  myval.each do |elem, v|
-    puts elem
-    arr << elem
-  end
-  arr
+  myval = groceries.values.flatten;
+  # arr = [];
+  # p myval
+  # myval.each do |elem, v|
+  #   puts elem
+  #   arr << elem
+  # end
+  # arr
 end
