@@ -9,8 +9,8 @@ def second_challenge
   #code your solution here!
   myval = groceries.values;
   arr = [];
-  myval.each do |elem|
-    arr << elem
+  myval.each do |elem, v|
+    arr << v
   end
 arr
 end
