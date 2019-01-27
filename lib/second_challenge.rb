@@ -10,7 +10,7 @@ def second_challenge
   myval = groceries.values;
   arr = [];
   myval.each do |elem, v|
-    puts elem
+    puts "ffffffffffff" + elem
   end
 arr
 end
